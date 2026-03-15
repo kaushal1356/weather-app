@@ -1,0 +1,131 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#5f9cff,#6dd5fa,#2980b9);
+padding:20px;
+}
+
+/* Container */
+
+.container{
+width:100%;
+max-width:420px;
+text-align:center;
+background:white;
+padding:30px 25px;
+border-radius:20px;
+box-shadow:0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* Title */
+
+.container h1{
+margin-bottom:20px;
+color:#333;
+}
+
+/* Form */
+
+form{
+display:flex;
+gap:10px;
+margin-bottom:25px;
+}
+
+form input{
+flex:1;
+padding:12px;
+border-radius:8px;
+border:1px solid #ddd;
+font-size:16px;
+}
+
+form button{
+padding:12px 18px;
+border:none;
+background:#2980b9;
+color:white;
+border-radius:8px;
+cursor:pointer;
+transition:.3s;
+}
+
+form button:hover{
+background:#1c5f8a;
+}
+
+/* Weather Card */
+
+.weather{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#f7f9fc;
+padding:20px;
+border-radius:15px;
+}
+
+/* Left */
+
+.left h2{
+font-size:40px;
+color:#333;
+}
+
+.left h3{
+font-size:20px;
+color:#555;
+}
+
+/* Right */
+
+.right{
+text-align:center;
+}
+
+.icon img{
+width:80px;
+}
+
+.condition p{
+font-size:14px;
+color:#555;
+}
+
+/* Mobile Responsive */
+
+@media(max-width:500px){
+
+.container{
+padding:25px 20px;
+}
+
+.weather{
+flex-direction:column;
+gap:15px;
+text-align:center;
+}
+
+.left h2{
+font-size:36px;
+}
+
+form{
+flex-direction:column;
+}
+
+form button{
+width:100%;
+}
+
+}
+
